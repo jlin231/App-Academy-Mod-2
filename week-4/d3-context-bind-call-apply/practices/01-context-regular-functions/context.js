@@ -16,11 +16,11 @@ const nemo = new Fish('Nemo');
 
 /********************************* Scenario 1 *********************************/
 // eat(); // ?
-
+//undefined eats fish food
 
 /********************************* Scenario 2 *********************************/
 // nemo.eat = eat;
-// nemo.eat(); // ?
+// nemo.eat(); // Nemo eats fish food
 
 
 /********************************* Scenario 3 *********************************/
@@ -33,5 +33,7 @@ const nemo = new Fish('Nemo');
 
 
 /********************************* Scenario 5 *********************************/
-// const swim = nemo.swim;
-// swim(); // ?
+const swim = nemo.swim;
+swim(); // ?
+
+//why does Scenario 5 throw an error?

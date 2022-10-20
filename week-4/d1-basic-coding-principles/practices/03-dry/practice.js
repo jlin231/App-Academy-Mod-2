@@ -1,47 +1,38 @@
 function multiplyBiggerNumByTwo(num1, num2) {
-  let bigNum;
-  if (num1 > num2) {
-    bigNum = num1;
-    return bigNum * 2;
+  if (greaterThan(num1, num2)) {
+    return num1 * 2;
   } else {
-    bigNum = num2;
-    return bigNum * 2;
+    return num2 * 2;
   }
 }
 
 function divideBiggerNumByThree(num1, num2) {
-  let bigNum;
-  if (num1 > num2) {
-    bigNum = num1;
-    return bigNum / 3;
+  if (greaterThan(num1, num2)) {
+    return num1 / 3;
   } else {
-    bigNum = num2;
-    return bigNum / 3;
+    return num2 / 3;
   }
 }
 
 function eatMostTacos(sum1, sum2) {
-  let bigNum;
-  if (sum1 > sum2) {
-    bigNum = sum1;
-    return `I ate ${bigNum} tacos.`;
+  if (greaterThan(sum1, sum2)) {
+    return `I ate ${sum1} tacos.`;
   } else {
-    bigNum = sum2;
-    return `I ate ${bigNum} tacos.`;
+    return `I ate ${sum2} tacos.`;
   }
 }
 
 function adoptSmallerDog(weight1, weight2) {
-  let smallDog;
-  if (weight1 < weight2) {
-    smallDog = weight1;
-    return `I adopted a dog that weighs ${smallDog} pounds.`;
+  if (greaterThan(weight2, weight1)) {
+    return `I adopted a dog that weighs ${weight1} pounds.`;
   } else {
-    smallDog = weight2;
-    return `I adopted a dog that weighs ${smallDog} pounds.`;
+    return `I adopted a dog that weighs ${weight2} pounds.`;
   }
 }
 
+function greaterThan(ele1, ele2) {
+  return ele1 > ele2
+}
 
 /**************************************************************************/
 /* DO NOT CHANGE THE CODE BELOW */

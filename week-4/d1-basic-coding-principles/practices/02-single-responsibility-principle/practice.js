@@ -32,6 +32,8 @@ const recipes = {
 };
 /* DO NOT CHANGE THE CODE ABOVE */
 
+function printPies()
+
 /*************************** FUNCTION TO REFACTOR ****************************/
 function bakeAndSellPies(pieType, pieQuantity, profitMargin) {
   // Find the recipe for the pieType specified
