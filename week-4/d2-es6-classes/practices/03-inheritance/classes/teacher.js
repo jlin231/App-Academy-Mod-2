@@ -1,5 +1,27 @@
 const Person = require('./person');
 
+class Teacher extends Person  {
+  constructor(firstName, lastName, subject, yearsOfExperience){
+    super(firstName, lastName)
+    this.subject = subject
+    this.yearsOfExperience = yearsOfExperience
+  }
+
+  getYearsOfExperience(){
+    return this.yearsOfExperience
+  }
+
+  static combinedYearsOfExperience(teachers){
+    let sum = 0;
+    teachers.forEach((teacher) => {
+      sum += teacher.yearsOfExperience
+    })
+    return sum;
+  }
+}
+
+
+
 // Your code here
 
 /****************************************************************************/
